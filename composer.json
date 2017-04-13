@@ -1,0 +1,26 @@
+{
+  "name": "preventhivok/phonetic_spelling",
+  "type": "drupal-module",
+  "description": "Provides a phonetic spelling and pronunciation field type for Drupal 8.",
+  "keywords": [
+      "Drupal",
+      "module",
+      "field",
+      "phonetic",
+      "pronunciation",
+      "International Phonetic Alphabet",
+      "IPA"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/PreventHIVOK/drupal-phonetic_spelling#readme",
+  "support": {
+    "issues": "https://github.com/PreventHIVOK/drupal-phonetic_spelling/issues",
+    "source": "https://github.com/PreventHIVOK/drupal-phonetic_spelling.git"
+  },
+  "require": {
+      "php": "^7.0",
+      "drupal/core": "^8.3"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

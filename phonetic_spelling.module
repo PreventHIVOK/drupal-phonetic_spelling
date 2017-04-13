@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains phonetic_spelling.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function phonetic_spelling_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the phonetic_spelling module.
+    case 'help.page.phonetic_spelling':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a phonetic spelling field type.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function phonetic_spelling_theme() {
+  return [
+    'phonetic_spelling' => [
+      'template' => 'phonetic_spelling',
+      'render element' => 'children',
+    ],
+  ];
+}

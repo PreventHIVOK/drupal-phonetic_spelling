@@ -1,0 +1,9 @@
+name: Phonetic Spelling
+type: module
+description: Provides a phonetic spelling field type
+core: 8.x
+package: Field types
+
+dependencies:
+  - field:field
+  - file:file
